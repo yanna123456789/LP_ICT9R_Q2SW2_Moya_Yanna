@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration</title>
+    <!-- Bootstrap 5 CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #121212;  /* Dark background for body */
+            color: #fff;  /* White text color */
+        }
+
+        .container {
+            background-color: #ffffff; /* White container background */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #0d6efd; /* Blue for headers */
+        }
+
+        .form-label {
+            color: #0d6efd;  /* Blue for form labels */
+        }
+
+        .btn-primary {
+            background-color: #198754; /* Green button */
+            border-color: #198754; /* Green border */
+        }
+
+        .form-control,
+        .form-select {
+            background-color: #f1f1f1;  /* Light gray background for form fields */
+            border-color: #ced4da;
+        }
+
+        .form-check-input {
+            background-color: #f1f1f1;  /* Light gray background for checkboxes */
+            border-color: #ced4da;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;  /* Dark background for footer */
+            color: white;
+            margin-top: 30px;
+        }
+
+        .form-check-label {
+            color: #0d6efd; /* Blue for checkbox labels */
+        }
+
+        .btn-primary:hover {
+            background-color: #145a32; /* Darker green on hover */
+            border-color: #145a32; /* Darker green border on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Robotics Club Registration</h1>
+        <h2 class="text-center">Join Our Club of Robots!</h2>
+
+        <form action="#" method="POST">
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- Age -->
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- Topics Checkbox -->
+            <div class="mb-3">
+                <label class="form-label">Interest</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="topic1" name="topics" value="Robotics">
+                    <label class="form-check-label" for="topic1">Robotics</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="topic2" name="topics" value="Programming">
+                    <label class="form-check-label" for="topic2">Programming</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="topic3" name="topics" value="AI">
+                    <label class="form-check-label" for="topic3">Artificial Intelligence</label>
+                </div>
+            </div>
+
+            <!-- Level Radio Buttons -->
+            <div class="mb-3">
+                <label class="form-label">Experience</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="level" id="beginner" value="Beginner">
+                    <label class="form-check-label" for="beginner">Beginner</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="level" id="intermediate" value="Intermediate">
+                    <label class="form-check-label" for="intermediate">Average</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="level" id="advanced" value="Advanced">
+                    <label class="form-check-label" for="advanced">Advanced</label>
+                </div>
+            </div>
+
+            <!-- Projects Dropdown -->
+            <div class="mb-3">
+                <label for="projects" class="form-label">Choose a Project</label>
+                <select class="form-select" id="projects" name="projects" required>
+                    <option value="">Select a project</option>
+                    <option value="Autonomous Robot">Autonomous Robot</option>
+                    <option value="AI-Powered Website">AI-Powered Website</option>
+                    <option value="Smart Phone System">Smart Phone System</option>
+                </select>
+            </div>
+
+            <!-- Why do you want to join? -->
+            <div class="mb-3">
+                <label for="reason" class="form-label">Why do you want to join?</label>
+                <textarea class="form-control" id="reason" name="reason" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
